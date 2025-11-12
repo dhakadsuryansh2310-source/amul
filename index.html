@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <img id="logo" src="data:image/png;base64,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" alt="">
+        <div id="innernav">
+            <div class="nav-glow"></div>
+            <div class="nav-item">
+                <h1>OUR PRODUCTS</h1>
+                <div class="dropdown-menu">
+                    <a href="#">Butter & Ghee</a>
+                    <a href="#">Milk & Dahi</a>
+                    <a href="#">Cheese</a>
+                    <a href="#">Paneer</a>
+                    <a href="#">Ice Cream</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <h1>ABOUT US</h1>
+                <div class="dropdown-menu">
+                    <a href="#">Our Story</a>
+                    <a href="#">Leadership</a>
+                    <a href="#">Heritage</a>
+                    <a href="#">Awards</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <h1>FIND A STORE</h1>
+                <div class="dropdown-menu">
+                    <a href="#">Store Locator</a>
+                    <a href="#">Online Partners</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <h1>AMUL FOR INDIA</h1>
+                <div class="dropdown-menu">
+                    <a href="#">CSR Initiatives</a>
+                    <a href="#">Farmer Stories</a>
+                    <a href="#">Sustainability</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <h1>B2B</h1>
+                <div class="dropdown-menu">
+                    <a href="#">Bulk Orders</a>
+                    <a href="#">Distributors</a>
+      `          </div>
+            </div>
+        </div>
+        <div id="navright">
+            <i class="ri-search-line"> SEARCH</i>
+            <h1>MY CART</h1>
+            
+    </nav>
+    <div style="position:relative; width:100%;">
+        <video id="introVideo" src="Amul_Girl_Ad_Animation_Generation.mp4" autoplay muted playsinline style="display:block; width:100%; border-radius:12px;"></video>
+        <img id="videoImageOverlay" src="Gemini_Generated_Image_wx2wicwx2wicwx2w.png" alt="After video" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; border-radius:12px; opacity:0; pointer-events:none; transition:opacity 0.7s cubic-bezier(.4,0,.2,1);" />
+        <div id="div1">       
+                    <h4>THE TASTE OF INDIA SINCE 1996!</h4>
+                    <div id="div2">
+                       <h5>PURE   |  </h5>
+                       <H5>TRUSTED  |  </H5>
+                       <H5>LOVED BY GENERATIONS....</H5>
+                    </div>
+        <button onclick="scrollToProducts()">SEE MORE</button>
+        </div>
+    </div>
+    <div class="products">
+        <h1 class="prd">OUR PRODUCTS</h1>
+    </div>
+    <main>
+        <section class="bento-grid" aria-label="Featured products bento">
+            <article class="bento-item item-large">
+                <div class="bento-media" aria-hidd en="true">
+                    <img src="amul butter.jpg" alt="Fresh Butter">
+                   
+                </div>
+                <div class="bento-content">
+                    <h2>Fresh Butter</h2>
+                </div>
+            </article>
+
+            <article class="bento-item item-medium">
+                <div class="bento-media" aria-hidden="true">
+                    <img src="amul paneer.jpg" alt="Paneer">
+                </div>
+                <div class="bento-content">
+                    <h2>Paneer</h2>
+                </div>
+            </article>
+
+            <article class="bento-item item-medium">
+                <div class="bento-media" aria-hidden="true">
+                    <img src="amul milk.jpg" alt="Milk">
+                </div>
+                <div class="bento-content">
+                    <h2>Milk</h2>
+                    
+                </div>
+            </article>
+
+            <article class="bento-item item-tall">
+                <div class="bento-media" aria-hidden="true">
+                    <img src="amul lassi.jpg" alt="Lassi">
+                </div>
+                <div class="bento-content">
+                    <h2>Lassi</h2>
+                </div>
+            </article>
+
+            <article class="bento-item item-small">
+                <div class="bento-media" aria-hidden="true">
+                    <img src="amul ghee.jpg" alt="Ghee">
+                </div>
+                <div class="bento-content">
+                    <h2>Ghee</h2>
+                </div>
+            </article>
+
+            <article class="bento-item item-small">
+                <div class="bento-media" aria-hidden="true">
+                    <img src="amul cheese.jpg" alt="Cheese">
+                </div>
+                <div class="bento-content">
+                    <h2>Cheese</h2>
+                </div>
+            </article>
+
+
+            <article class="bento-item item-small">
+                <div class="bento-media" aria-hidden="true">
+                    <img src="amul butter cookies.jpg" alt="Butter Cookies">
+                </div>
+                <div class="bento-content">
+                    <h2>Butter Cookies</h2>
+                </div>
+            </article>
+            <article class="bento-item item-small">
+                <div class="bento-media" aria-hidden="true">
+                    <img src="peanut butter.avif" alt="dahi">
+                </div>
+                <div class="bento-content">
+                    <h2>Peanut butter</h2>
+                </div>
+            </article>
+            <article class="bento-item item-small">
+                <div class="bento-media" aria-hidden="true">
+                    <img src="amul kool badam.jpg" alt="badam">
+                </div>
+                <div class="bento-content">
+                    <h2>Amul kool badam</h2>
+                </div>
+            </article>
+            <article class="bento-item item-small">
+                <div class="bento-media" aria-hidden="true">
+                    <img src="amul kool kesar.jpg" alt="kesar ">
+                </div>
+                <div class="bento-content">
+                    <h2>Amul Kool kesar</h2>
+                </div>
+            </article>
+            <article class="bento-item item-small">
+                <div class="bento-media" aria-hidden="true">
+                    <img src="amul chocolate magic.jpg" alt="magic">
+                </div>
+                <div class="bento-content">
+                    <h2>Chocolate magic sundae</h2>
+                </div>
+            </article>
+            <article class="bento-item item-small">
+                <div class="bento-media" aria-hidden="true">
+                    <img src="buttermilk2.avif" alt="buttermilk">
+                </div>
+                <div class="bento-content">
+                    <h2>Buttermilk</h2>
+                </div>
+            </article>
+        </section>
+        
+        <div id="video2">
+            <img src="gif.gif"></img>
+        </div>
+         <div class="products">
+            <h1 class="prd">FRESH NEW LAUNCHES !!</h1>
+        </div>
+
+                <div id="gallary" class="wide-slideshow">
+                        <button class="slide-btn prev" aria-label="Previous image">&#10094;</button>
+                        <div class="slides-wrapper">
+                                <img class="slide active" src="gal4.avif" alt="Gallery 1">
+                                <img class="slide" src="gal1.avif" alt="Gallery 2">
+                                <img class="slide" src="gal3.avif" alt="Gallery 3">
+                                <img class="slide" src="gal2.avif" alt="Gallery 4">
+                                <img src="gal5.avif" alt="Gallery 5" class="slide">
+                                
+
+                        </div>
+                        <button class="slide-btn next" aria-label="Next image">&#10095;</button>
+                </div>
+
+
+        <div class="products">
+            <h1 class="prd">ABOUT US </h1>
+        </div>
+        <section id="brand-cards-section" class="brand-section">
+            <div class="brand-inner container">
+                <div class="brand-cards" role="list">
+                    <article class="brand-card" role="listitem">
+                        <img src="dr.jpg" alt="dr varghese">
+                        <div class="card-content">
+                            <h3>About Dr Verghese kurien</h3>
+                            <p>Know about the father of white revolution</p>
+                        </div>
+                    </article>
+
+                    <article class="brand-card" role="listitem">
+                        <img src="amulapp.webp" alt="app">
+                        <div class="card-content">
+                            <h3>Amul World App</h3>
+                            <p>Check out all amul tropicals on our app</p>
+                        </div>
+                    </article>
+
+                    <article class="brand-card" role="listitem">
+                        <img src="amulgirl.jpg" alt="Quality testing in lab">
+                        <div class="card-content">
+                            <h3>About us</h3>
+                            <p></p>
+                        </div>
+                    </article>
+
+                    <article class="brand-card" role="listitem">
+                        <img src="culture.jpg" alt="Generations enjoying food">
+                        <div class="card-content">
+                            <h3>Heritage & Trust</h3>
+                            <p>Trusted by generations for our taste and tradition.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>PRODUCTS</h3>
+            <ul>
+                <li><a href="#">Biscuits</a></li>
+                <li><a href="#">Dairy</a></li>
+                <li><a href="#">Breads</a></li>
+                <li><a href="#">Rusk</a></li>
+                <li><a href="#">Cakes</a></li>
+                <li><a href="#">Snacking</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>EXPLORE</h3>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Impact</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Investor Center</a></li>
+                <li><a href="#">News & Media</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>CONTACT</h3>
+            <ul>
+                <li><a href="tel:18004254449">1-800-4254449</a></li>
+                <li><a href="tel:180030004530">1-800-30004530</a></li>
+                <li><a href="mailto:info@amul.com">info@amul.com</a></li>
+                <li><a href="#">Consumer Feedback</a></li>
+                <li><a href="#">Complaints Policy</a></li>
+                <li><a href="#">Suppliers</a></li>
+                <li><a href="#">Distributors</a></li>
+                <li><a href="#">Our Offices</a></li>
+            </ul>
+        </div>
+        <div class="footer-section social">
+            <h3>CONNECT WITH US</h3>
+            <div class="footer-social-icons">
+                <a href="#" aria-label="LinkedIn"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" /></a>
+                <a href="#" aria-label="Facebook"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" /></a>
+                <a href="#" aria-label="Twitter"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter" /></a>
+                <a href="#" aria-label="Instagram"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" /></a>
+                <a href="#" aria-label="YouTube"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" alt="YouTube" /></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-legal">
+            <a href="#">Disclaimers</a> |
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Cookie Policy</a>
+        </div>
+        <div class="footer-copyright">
+            &copy; 2025 Amul. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+
+  <script src="script.js"></script>
+               
+        
+</body>
+</html>
