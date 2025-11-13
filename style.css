@@ -26,7 +26,7 @@ nav{
 }
 
 #logo{
-    height: 80px;
+    height: 40px;
 }
 
 h1{
@@ -121,7 +121,7 @@ h1:hover, i:hover, h2:hover{
 }
 .nav-item:hover h1,
 .nav-item h1:focus {
-    color: #0077b6;
+    color: crimson;
 }
 .dropdown-menu {
     position: absolute;
@@ -812,11 +812,7 @@ button:active{
     }
 }
 
-/* ============================================
-   COMPREHENSIVE RESPONSIVE DESIGN
-   ============================================ */
 
-/* TABLETS (768px - 1024px) */
 @media (max-width: 1024px) {
     nav {
         height: 50px;
@@ -872,7 +868,6 @@ button:active{
     }
 }
 
-/* SMALL TABLETS (600px - 768px) */
 @media (max-width: 768px) {
     html, body {
         padding: 8px;
@@ -969,7 +964,6 @@ button:active{
     }
 }
 
-/* MOBILE LANDSCAPE & LARGE PHONES (480px - 600px) */
 @media (max-width: 600px) {
     html, body {
         padding: 5px;
@@ -1140,7 +1134,6 @@ button:active{
     }
 }
 
-/* SMALL PHONES (320px - 480px) */
 @media (max-width: 480px) {
     html, body {
         padding: 4px;
@@ -1335,7 +1328,6 @@ button:active{
     }
 }
 
-/* ULTRA SMALL PHONES (under 320px) */
 @media (max-width: 320px) {
     nav {
         height: 40px;
